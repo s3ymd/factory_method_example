@@ -51,3 +51,22 @@ class SubSystemC {
 		logger.debug("サブシステムCの処理が完了しました");
 	}
 }
+
+
+/*
+生成するLoggerFactoryの実装クラス名を設定ファイル等から取得する例
+
+public class Main {
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+		// 設定ファイルから読み取ったクラス名
+		String className = "ConsoleLoggerFactory";
+
+		LoggerFactory loggerFactory =
+			(LoggerFactory)Class.forName(className).newInstance();
+
+		System.out.println(loggerFactory);
+	}
+}
+*/
+
+
